@@ -1,0 +1,23 @@
+{
+  "name": "modernjstemplate",
+  "version": "1.0.0",
+  "description": "leeg project",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DnZ19/modernJsTemplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DnZ19/modernJsTemplate/issues"
+  },
+  "homepage": "https://github.com/DnZ19/modernJsTemplate#readme",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}
