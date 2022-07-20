@@ -20,6 +20,10 @@ let client_secret = "";
 // Maakt een string vn de URL op basis van alle authorization gegevens en pushed die in de searchbar van de pagina
 // ... die zorgt dan voor een prompt van Spotify en geeft de 'code' terug.
 
+
+
+
+
 function onPageLoad(){
 
     client_id = localStorage.getItem("client_id");
@@ -101,7 +105,7 @@ function requestAuthorization() {
 }
 
 const buttonAuth = document.getElementById("auth-button");
-buttonAuth.addEventListener("click", requestAuthorization)
+buttonAuth.addEventListener("click", requestAuthorization);
 
 
 //(XHR) objects are used to interact with server
@@ -165,11 +169,6 @@ function addDevice(item){
     node.innerHTML = item.name;
     document.getElementById("devices").appendChild(node);
 }
-
-
-
-
-
 
 function callApi(method, url, body, callback){
     let xhr = new XMLHttpRequest();
