@@ -1,3 +1,24 @@
+body {
+  background-color: #c0c781;
+}
 
+.container {
+  background-color: #78bc61;
+  padding: 20px;
+}
+
+#albumImage {
+  width: 300px;
+  float: left;
+  margin: 20px;
+}
+
+#trackTitle {
+  font-size: 3em;
+}
+
+#trackArtist, .welcomeText {
+  font-size: 2em;
+}
 
 /*# sourceMappingURL=index.4d663569.css.map */
