@@ -33,11 +33,36 @@
                 <input class="btn btn-primary btn-sm mt-3" id="dev-button" type="button" onclick="refreshDevices()" value="Refresh Devices">
             </div>
 
+            <div class="mb-3">
+                <label for="playlists" class="form-label">Playlists</label>
+                <select id="playlists" class="form-control">
+                </select>
+                <input class="btn btn-primary btn-sm mt-3" type="button" id="playlist-ref-button" value="Refresh Playlists">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="tracks" class="form-label">Tracks</label>
+                <select id="tracks" class="form-control">
+                </select>
+                <input class="btn btn-primary btn-sm mt-3" type="button" onclick="fetchTracks()" value="Fetch Tracks">
+            </div>
+
+            <div class="mb-3">
+                <label for="genres" class="form-label">Genres</label>
+                <select id="genres" class="form-control">
+                </select>
+                <input class="btn btn-primary btn-sm mt-3" type="button" onclick="fetchGenres()" value="Fetch Genres">
+            </div>
+
+
+
         </div>
     </div>
 </div>
 
 <script src="/index.816e7b21.js"></script>
+<!--<script src="app.js" type="module"></script> doesnt seem to work with type = module-->
 </body>
 
 </html>

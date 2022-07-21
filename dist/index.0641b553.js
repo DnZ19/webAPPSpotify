@@ -533,6 +533,7 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"bNKaB":[function(require,module,exports) {
 //const axios = require('axios');
+//require('dotenv').config(); for password preotection, but doesnt work with Parcel
 const redirect_uri = "http://localhost:1234/callback";
 const AUTHORIZE = "https://accounts.spotify.com/authorize?";
 const TOKEN = "https://accounts.spotify.com/api/token";
@@ -596,6 +597,9 @@ function getCode() {
     return code;
 }
 function requestAuthorization() {
+    // const client_id = process.env.spotId;
+    // const client_secret = process.env.spotSec;
+    // doesnt work with parcel :(
     const client_id1 = "87bccbeb23114d44b788fd6cea0511b1";
     const client_secret1 = "2b6c6f0ac7bc45a8b23bb33510a6182b";
     localStorage.setItem("client_id", client_id1);
