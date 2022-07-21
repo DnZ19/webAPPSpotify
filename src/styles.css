@@ -10,13 +10,13 @@ body{
     background-color: #c0c781ff;
 }
 
-/*#tokenSection{*/
-/*    display: none;*/
-/*}*/
+#tokenSection{
+    display: none;
+}
 
-/*#deviceSection{*/
-/*    display: none;*/
-/*}*/
+#deviceSection{
+    display: none;
+}
 
 .container{
     padding: 20px;

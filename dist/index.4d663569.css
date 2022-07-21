@@ -2,6 +2,10 @@ body {
   background-color: #c0c781;
 }
 
+#tokenSection, #deviceSection {
+  display: none;
+}
+
 .container {
   background-color: #78bc61;
   padding: 20px;

@@ -7,7 +7,7 @@
     <title>Spotify Web API Demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
-    <script src="app.js"></script>
+
 </head>
 
 <body onload="onPageLoad()">
@@ -33,11 +33,36 @@
                 <input class="btn btn-primary btn-sm mt-3" id="dev-button" type="button" onclick="refreshDevices()" value="Refresh Devices">
             </div>
 
+            <div class="mb-3">
+                <label for="playlists" class="form-label">Playlists</label>
+                <select id="playlists" class="form-control">
+                </select>
+                <input class="btn btn-primary btn-sm mt-3" type="button" id="playlist-ref-button" value="Refresh Playlists">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="tracks" class="form-label">Tracks</label>
+                <select id="tracks" class="form-control">
+                </select>
+                <input class="btn btn-primary btn-sm mt-3" type="button" onclick="fetchTracks()" value="Fetch Tracks">
+            </div>
+
+            <div class="mb-3">
+                <label for="genres" class="form-label">Genres</label>
+                <select id="genres" class="form-control">
+                </select>
+                <input class="btn btn-primary btn-sm mt-3" type="button" onclick="fetchGenres()" value="Fetch Genres">
+            </div>
+
+
+
         </div>
     </div>
 </div>
 
-
+<script src="app.js"></script>
+<!--<script src="app.js" type="module"></script> doesnt seem to work with type = module-->
 </body>
 
 </html>
