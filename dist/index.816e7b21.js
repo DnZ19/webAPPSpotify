@@ -212,21 +212,19 @@ function handleGenresResponse() {
     if (this.status === 200) {
         let data = JSON.parse(this.responseText);
         console.log(data);
-        console.log(data.genres);
-        console.log("test genre 1"); // krijg API data wel binnen....
+        //console.log(data.genres)
         removeAllItems("genres");
-        // data.items.forEach( (genres, index, array) => addGenre(genres, index, array)); //this one is wrong
-        data.genres.forEach((genres, index)=>addGenre(genres[0], index)); // for loop?
+        data.genres.forEach((genre, index)=>addGenre(genre, index));
     } else if (this.status === 401) refreshAccessToken();
     else {
         console.log(this.responseText);
         alert(this.responseText);
     }
 }
-function addGenre(genres, index) {
+function addGenre(genre, index) {
     let node = document.createElement("option");
     node.value = index;
-    node.innerHTML = genres.name;
+    node.innerHTML = genre;
     document.getElementById("genres").appendChild(node);
 }
 
